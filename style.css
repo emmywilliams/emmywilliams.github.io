@@ -83,6 +83,7 @@ section{
 
 .home-img img{
   width: 35vw;
+  border-radius: 50%;
   animation: floatImage 4s ease-in-out infinite;
 }
 
@@ -168,6 +169,7 @@ span{
 
 .about-img img{
   width: 35vw;
+  border-radius: 30px;
 }
 
 .heading{
@@ -187,6 +189,70 @@ span{
 .about-content p{
   font-size: 1.6rem;
   margin: 2rem 0 3rem;
+}
+
+table{
+  border-collapse: collapse;
+  margin: 0;
+  width: 100%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  font-size: 17px;
+  margin-top: 45px;
+  background: var(--second-bg-color);
+  flex-wrap: wrap;
+
+}
+
+table tr{
+  padding: .45em;
+}
+
+thead tr{
+  background-color: #0ef;
+}
+
+thead th{
+  color: black;
+  font-size: 1.15em;
+}
+
+tbody tr:nth-child(even){
+  background-color: #1f242d;
+}
+
+table th,
+table td {
+  font-size: 1em;
+  padding: 1em;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  table{
+    border: 3px solid #0ef;
+  }
+  table thead tr{
+    display: none;
+  }
+  table tr{
+    display: block;
+  }
+  table th, table td {
+    padding: .5em;
+  }
+  table td{
+    text-align: right;
+    display: block;
+    font-size: 1em;
+  }
+  table td::before{
+    content: attr(data-title) ":";
+    float: left;
+  }
+  tbody tr:nth-child(even){
+    background-color: #0ef;
+    color: #fff;
+  }
 }
 
 .services h2{

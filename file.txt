@@ -1,0 +1,94 @@
+First, you need to have Node.js installed on your system. You can download the latest version from https://nodejs.org/en/download/. Once it is installed, follow the steps below:
+
+1. Create a new folder for your project and navigate to it in your terminal.
+2. Run `npm init -y` to create a package.json file with default settings.
+3. Run `npm install express body-parser nodemailer cors` to install the required packages.
+4. Create a file called 'server.js' in your project folder and add the following code:
+
+```javascript
+const express = require('express');
+const bodyParser = require('body-parser');
+const nodemailer = require('nodemailer');
+const cors = require('cors');
+
+const app = express();
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(cors());
+
+app.post('/send-email', async (req, res) => {
+  const { name, email, phone, subject, message } = req.body;
+
+  // Replace with your email credentials
+  const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+      user: 'your-email@gmail.com',
+      pass: 'your-email-password',
+    },
+  });
+
+  const mailOptions = {
+    from: email,
+    to: 'your-email@gmail.com',
+    subject: subject || 'New contact form submission',
+    html: `<p>Name: ${name}</p>
+           <p>Email: ${email}</p>
+           <p>Phone: ${phone}</p>
+           <p>Message: ${message}</p>`,
+  };
+
+  try {
+    await transporter.sendMail(mailOptions);
+    res.status(200).send('Message sent successfully');
+  } catch (error) {
+    console.error('Error sending email:', error);
+    res.status(500).send('Error sending email');
+  }
+});
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
+```
+
+5. Update the form's `onsubmit` attribute in your HTML for the AJAX request:
+
+```html
+onsubmit="sendEmail(event); reset(); return false;"
+```
+
+6. Add the following script to your HTML to send the AJAX request:
+
+```html
+<script>
+  function sendEmail(event) {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const subject = document.querySelector('input[type="text"][placeholder="Subject"]').value;
+    const message = document.getElementById('message').value;
+
+    const xhr = new XMLHttpRequest();
+    xhr.open('POST', 'http://localhost:3000/send-email', true);
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhr.onload = function () {
+      if (xhr.status === 200) {
+        alert('Message sent successfully');
+      } else {
+        alert('Error sending message');
+      }
+    };
+    xhr.send(`name=${name}&email=${email}&phone=${phone}&subject=${subject}&message=${message}`);
+  }
+</script>
+```
+
+7. Update the email credentials (e.g., Gmail) in 'server.js' with your own.
+8. Run the server by typing `node server.js` in your terminal.
+9. Now, you can open your 'index.html' file and submit the contact form. The form data will be sent to the email address specified in the `mailOptions` object in 'server.js'.
+
+Please note that this is a very basic implementation and may not be secure enough for a production website. Consider validating the data and securing your email credentials before using it in a live environment.

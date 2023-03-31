@@ -24,6 +24,7 @@
       <nav class="navbar">
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
+        <a href="#education">Education</a>
         <a href="#services">Services</a>
         <a href="#portfolio">Portfolio</a>
         <a href="#gallery">Gallery</a>
@@ -36,14 +37,16 @@
       <div class="home-content">
         <h3>Hello, It's Me</h3>
         <h1>Emmy Williams</h1>
-        <h3>And I'm <span class="multiple-text"></span></h3>
+        <h3>I'm a <span class="multiple-text"></span></h3>
         <p>
-          I’m a student at Makerere University currently pursuing a Bachelor’s
-          degree in Computer Science. <br />
-          I’m passionate about Artificial/Intelligence, Systems Development and
-          technology at large. <br />
-          I take time to be a very precious aspect of life, I believe in
-          interpersonal collaboration, team work and I’m eager to learn more.
+          <span style="color: white; font-weight: bold; font-style: italic"
+            >" Transforming complex problems into elegant solutions "</span
+          >
+          <br />
+          <br />
+          I am a computer scientist with a passion for innovation and a track
+          record of delivering cutting-edge projects on time and on budget.
+          Let's collaborate and create something amazing together.
         </p>
         <div class="social-media">
           <a href="https://www.facebook.com/emmy.williamz"
@@ -59,9 +62,7 @@
             ><i class="bx bxl-linkedin"></i
           ></a>
         </div>
-        <a href="image/Kayanja_emmy_william.pdf" class="btn" download
-          >Download CV</a
-        >
+        <a class="btn" onclick="downloadPDF()">Download CV</a>
       </div>
       <div class="home-img">
         <img src="image/emmy.jpg" alt="profile picture" />
@@ -80,28 +81,96 @@
 
       <div class="about-content">
         <h2 class="heading">About <span>Me</span></h2>
-        <h3>Frontend Developer</h3>
+        <h3>Welcome to my online home!</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
-          dolor sit amet consectetur adipisicing elit.
+          My name is Emmy William Kayanja and I am a computer scientist with a
+          passion for creating innovative solutions to complex problems.
+          <br />
+          <br />
+          Throughout my career, I have gained expertise in various programming
+          languages, data analysis, and software development. I view learning as
+          a continuous journey and am eager to gain knowledge and experience
+          from experts.
+          <br />
+          <br />
+          My goal is to leverage my skills and experience to deliver tangible
+          and impactful results for clients and organizations. My interest in
+          technology drives me to explore various areas and expand my abilities
+          to develop innovative solutions in the field. With my strong interest
+          in AI and systems development, I believe that I have the potential to
+          contribute to the development of groundbreaking technologies that will
+          change the business world for the better.
+          <br />
+          <br />
+          On this website, you will find a collection of my projects,
+          achievements, and professional experience. I invite you to browse my
+          portfolio and get a glimpse of my work. Please do not hesitate to
+          contact me for any inquiries or opportunities to collaborate. <br />
+          <br />
+          Thank you for visiting!
         </p>
-        <a href="#" class="btn">Read More</a>
+        <a href="#contact" class="btn">Contact Me</a>
       </div>
     </section>
 
     <!-- services design-->
+    <section class="education" id="education">
+      <h2 class="heading">My <span>Education</span></h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Achievement</th>
+            <th>Institution</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th data-title="Date" scope="row">Ongoing</th>
+            <th data-title="Achievement" style="font-weight: lighter">
+              Bachelor of Science in Computer Science | CGPA: 3.87/5.00
+            </th>
+            <th data-title="Institution" style="font-weight: lighter">
+              Makerere University, College of Computing and Information Sciences
+            </th>
+          </tr>
+          <tr>
+            <th data-title="Date" scope="row">January 2018 – December 2019</th>
+            <th data-title="Achievement" style="font-weight: lighter">
+              Uganda Advance Certificate of Education (UACE)
+            </th>
+            <th data-title="Institution" style="font-weight: lighter">
+              Masaka Secondary School
+            </th>
+          </tr>
+          <tr>
+            <th data-title="Date" scope="row">January 2014- December 2017</th>
+            <th data-title="Achievement" style="font-weight: lighter">
+              Uganda Certificate of Education (UCE)
+            </th>
+            <th data-title="Institution" style="font-weight: lighter">
+              St. Jude Secondary School, Kyabakuza
+            </th>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- services design-->
     <section class="services" id="services">
-      <h2 class="heading">Our <span>Services</span></h2>
+      <h2 class="heading">Services <span>offered</span></h2>
 
       <div class="services-container">
         <div class="services-box">
           <i class="bx bx-code-alt"></i>
-          <h3>Web Development</h3>
+          <h3>Website Development</h3>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-            obcaecati consequatur enim minima aspernatur vitae dolorem, sequi
-            quae quas quia voluptas a delectus vel dolore nam? Est eum deserunt
-            perspiciatis.
+            A professional website is crucial for businesses as it serves as
+            their storefront in the digital world and can establish credibility,
+            boost brand recognition, and improve customer experience,
+            potentially impacting a customer's decision to engage further with
+            the business.
           </p>
           <a href="#" class="btn">Read More</a>
         </div>
@@ -110,10 +179,10 @@
           <i class="bx bxl-android"></i>
           <h3>Mobile App Development</h3>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-            obcaecati consequatur enim minima aspernatur vitae dolorem, sequi
-            quae quas quia voluptas a delectus vel dolore nam? Est eum deserunt
-            perspiciatis.
+            Professional mobile apps enhance customer engagement, increase brand
+            recognition and reputation, offer a personalized and convenient
+            experience, and provide a competitive advantage, making them a
+            valuable marketing strategy for business growth and success.
           </p>
           <a href="#" class="btn">Read More</a>
         </div>
@@ -122,10 +191,11 @@
           <i class="bx bxs-paint"></i>
           <h3>Graphic Design</h3>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-            obcaecati consequatur enim minima aspernatur vitae dolorem, sequi
-            quae quas quia voluptas a delectus vel dolore nam? Est eum deserunt
-            perspiciatis.
+            Professional graphic designs are crucial for brand representation
+            and recognition, communicating complex ideas and creating a positive
+            user experience. Consistency and quality across all mediums builds
+            trust and loyalty, strengthens brand identity and differentiation,
+            and enhances engagement and sales.
           </p>
           <a href="#" class="btn">Read More</a>
         </div>
@@ -134,10 +204,12 @@
           <i class="bx bx-buildings"></i>
           <h3>Custom Systems Development</h3>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-            obcaecati consequatur enim minima aspernatur vitae dolorem, sequi
-            quae quas quia voluptas a delectus vel dolore nam? Est eum deserunt
-            perspiciatis.
+            This can can enhance productivity and profitability by tailoring a
+            system to a company's unique needs. It simplifies processes, reduces
+            errors, and can be integrated with other systems for better
+            functionality, data collection, and sharing. It provides a
+            competitive edge, streamlines operations, reduces costs, and
+            improves overall performance.
           </p>
           <a href="#" class="btn">Read More</a>
         </div>
@@ -146,10 +218,11 @@
           <i class="bx bx-slideshow"></i>
           <h3>Software Solutions</h3>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-            obcaecati consequatur enim minima aspernatur vitae dolorem, sequi
-            quae quas quia voluptas a delectus vel dolore nam? Est eum deserunt
-            perspiciatis.
+            Software solutions are critical for modern businesses to streamline
+            their operations, improve efficiency and reduce costs. Accounting,
+            customer relationship management and inventory management are among
+            the many tasks that software can handle. Factors such as budget and
+            organization size influence software selection.
           </p>
           <a href="#" class="btn">Read More</a>
         </div>
@@ -158,10 +231,12 @@
           <i class="bx bx-bar-chart-alt"></i>
           <h3>Digital Marketing</h3>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-            obcaecati consequatur enim minima aspernatur vitae dolorem, sequi
-            quae quas quia voluptas a delectus vel dolore nam? Est eum deserunt
-            perspiciatis.
+            Digital marketing services are vital for businesses and can include
+            SEO, social media, email marketing, and more. They offer benefits
+            such as increased brand awareness, customer engagement, website
+            traffic, and sales. Digital marketing is cost-effective, measurable,
+            and enables businesses to compete with larger companies. It's
+            important to stay up-to-date with digital marketing trends.
           </p>
           <a href="#" class="btn">Read More</a>
         </div>
@@ -174,72 +249,40 @@
 
       <div class="portfolio-container">
         <div class="portfolio-box">
-          <img src="image/auto.jpg" alt="portfolio-image" />
+          <img src="image/web.jpg" alt="portfolio-image" />
           <div class="portfolio-layer">
-            <h4>Web Design</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-              nulla ea sunt placeat quo, dolore assumenda facilis est
-              consequuntur error eum expedita ipsa veritatis veniam maiores odit
-              vel doloremque aliquid.
+            <h4>Website Design</h4>
+            <p style="color: black">
+              This combines coding, design, and content creation to create
+              websites that are functional, user-friendly, and visually
+              appealing.
             </p>
-            <a href="#"><i class="bx bx-link-external"></i></a>
+            <!--<a href="#portfolio"><i class="bx bx-link-external"></i></a>-->
           </div>
         </div>
 
         <div class="portfolio-box">
-          <img src="image/auto.jpg" alt="portfolio-image" />
+          <img src="image/graphic1.jpg" alt="portfolio-image" />
           <div class="portfolio-layer">
-            <h4>Web Design</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-              nulla ea sunt placeat quo, dolore assumenda facilis est
-              consequuntur error eum expedita ipsa veritatis veniam maiores odit
-              vel doloremque aliquid.
+            <h4>Graphics Design</h4>
+            <p style="color: black">
+              This is a craft where professionals create visual content to
+              communicate messages.
             </p>
-            <a href="#"><i class="bx bx-link-external"></i></a>
+            <!--<a href="#portfolio"><i class="bx bx-link-external"></i></a>-->
           </div>
         </div>
 
         <div class="portfolio-box">
-          <img src="image/auto.jpg" alt="portfolio-image" />
+          <img src="image/app.jpeg" alt="portfolio-image" />
           <div class="portfolio-layer">
-            <h4>Web Design</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-              nulla ea sunt placeat quo, dolore assumenda facilis est
-              consequuntur error eum expedita ipsa veritatis veniam maiores odit
-              vel doloremque aliquid.
+            <h4>Mobile App Development</h4>
+            <p style="color: black">
+              Mobile app development is the process of creating software
+              applications that run on mobile devices such as smartphones,
+              tablets, and wearable devices.
             </p>
-            <a href="#"><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
-
-        <div class="portfolio-box">
-          <img src="image/auto.jpg" alt="portfolio-image" />
-          <div class="portfolio-layer">
-            <h4>Web Design</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-              nulla ea sunt placeat quo, dolore assumenda facilis est
-              consequuntur error eum expedita ipsa veritatis veniam maiores odit
-              vel doloremque aliquid.
-            </p>
-            <a href="#"><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
-
-        <div class="portfolio-box">
-          <img src="image/auto.jpg" alt="portfolio-image" />
-          <div class="portfolio-layer">
-            <h4>Web Design</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-              nulla ea sunt placeat quo, dolore assumenda facilis est
-              consequuntur error eum expedita ipsa veritatis veniam maiores odit
-              vel doloremque aliquid.
-            </p>
-            <a href="#"><i class="bx bx-link-external"></i></a>
+            <!--<a href="#portfolio"><i class="bx bx-link-external"></i></a>-->
           </div>
         </div>
       </div>
@@ -267,7 +310,7 @@
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Me!</span></h2>
 
-      <form onsubmit="sendEmail(); reset(); return false;">
+      <form onsubmit="sendEmail(event); reset(); return false;">
         <div class="input-box">
           <input type="text" id="name" placeholder="Name" />
           <input type="email" id="email" placeholder="Email" />
@@ -290,7 +333,10 @@
     <!-- Footer section-->
     <footer class="footer">
       <div class="footer-text">
-        <p>Copyright &copy; 2023 by Emmy Williams | All Rights Reserved.</p>
+        <p>
+          Copyright &copy; <span id="currentYear"></span> by Emmy Williams | All
+          Rights Reserved.
+        </p>
       </div>
 
       <div class="footer-iconTop">
@@ -313,27 +359,35 @@
       rel="stylesheet"
     />
 
-    <!-- email -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- code to send the AJAX request -->
     <script>
-      function sendEmail() {
-        Email.send({
-          Host: "smtp.gmail.com",
-          Username: "emmywilliams74@gmail.com",
-          Password: "William@1618",
-          To: "emmywilliams74@gmail.com",
-          From: document.getElementById("email").value,
-          Subject: "New Contact Form Entry",
-          Body:
-            "Name: " +
-            document.getElementById("name").value +
-            "<br> Email: " +
-            document.getElementById("email").value +
-            "<br> Phone number: " +
-            document.getElementById("phone").value +
-            "<br> Message: " +
-            document.getElementById("message").value,
-        }).then((message) => alert("Message sent successfully"));
+      function sendEmail(event) {
+        event.preventDefault();
+
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const phone = document.getElementById("phone").value;
+        const subject = document.querySelector(
+          'input[type="text"][placeholder="Subject"]'
+        ).value;
+        const message = document.getElementById("message").value;
+
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", "http://localhost:3000/send-email", true);
+        xhr.setRequestHeader(
+          "Content-Type",
+          "application/x-www-form-urlencoded"
+        );
+        xhr.onload = function () {
+          if (xhr.status === 200) {
+            alert("Message sent successfully");
+          } else {
+            alert("Error sending message");
+          }
+        };
+        xhr.send(
+          `name=${name}&email=${email}&phone=${phone}&subject=${subject}&message=${message}`
+        );
       }
     </script>
 

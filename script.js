@@ -66,16 +66,15 @@ const typed = new Typed(".multiple-text", {
 });
 
 //download button
-let button = document.querySelector("body a");
-button.addEventListener("click", () => {
-  const span = document.querySelector("a span");
-  button.style.paddingRight = "visible";
-  setTimeout(() => {
-    span.style.visibility = "hidden";
-    button.style.transition = ".3s ease-in-out";
-    button.style.paddingRight = "0px";
-  }, 3000);
-});
+function downloadPDF() {
+  var pdfURL = "image/Kayanja_emmy_william.pdf";
+  var downloadLink = document.createElement("a");
+  downloadLink.href = pdfURL;
+  downloadLink.download = "file.pdf";
+  document.body.appendChild(downloadLink);
+  downloadLink.click();
+  document.body.removeChild(downloadLink);
+}
 
 // gallery
 var fullImgBox = document.getElementById("fullImgBox");
@@ -88,4 +87,49 @@ function openFullImg(pic) {
 
 function closeFullImg() {
   fullImgBox.style.display = "none";
+}
+
+// To automatically update the year
+const currentYear = new Date().getFullYear();
+document.getElementById("currentYear").textContent = currentYear;
+
+//email
+const nodemailer = require("nodemailer");
+
+function sendEmail(req, res) {
+  const name = req.body.name;
+  const email = req.body.email;
+  const phone = req.body.phone;
+  const subject = req.body.subject;
+  const message = req.body.message;
+
+  const transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      user: "emmywilliams74@gmail.com", // Replace with your email address
+      pass: "William@1618", // Replace with your email password
+    },
+  });
+
+  const mailOptions = {
+    from: email,
+    to: "emmywilliams74@gmail.com", // Replace with the recipient's email address
+    subject: subject,
+    html: `
+      <p>Name: ${name}</p>
+      <p>Email: ${email}</p>
+      <p>Phone: ${phone}</p>
+      <p>Message: ${message}</p>
+    `,
+  };
+
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.log(error);
+      res.status(500).send("Error sending email.");
+    } else {
+      console.log("Email sent: " + info.response);
+      res.send("Email sent successfully.");
+    }
+  });
 }
