@@ -250,7 +250,7 @@ table td {
     float: left;
   }
   tbody tr:nth-child(even){
-    background-color: #0ef;
+    background-color: #1f242d;
     color: #fff;
   }
 }
