@@ -230,6 +230,7 @@ table td {
 @media (max-width: 768px) {
   table{
     border: 3px solid #0ef;
+    font-size: 13px;
   }
   table thead tr{
     display: none;
