@@ -243,7 +243,7 @@ table td {
   table td{
     text-align: right;
     display: block;
-    font-size: 13px;
+    /*font-size: 13px;*/
   }
   table td::before{
     content: attr(data-title) ":";
