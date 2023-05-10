@@ -224,7 +224,7 @@ table th,
 table td {
   font-size: 1em;
   padding: 1em;
-  text-align: center;
+  text-align: left;
 }
 
 @media (max-width: 768px) {
