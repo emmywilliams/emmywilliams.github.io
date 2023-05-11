@@ -345,7 +345,10 @@
     <section class="contact" id="contact">
       <h2 class="heading">Contact <span>Me!</span></h2>
 
-      <form onsubmit="sendEmail(event); reset(); return false;">
+      <form
+        action="https://formsubmit.co/emmywilliamkayanja@gmail.com"
+        method="post"
+      >
         <div class="input-box">
           <input type="text" id="name" placeholder="Name" />
           <input type="email" id="email" placeholder="Email" />
@@ -393,38 +396,6 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-
-    <!-- code to send the AJAX request -->
-    <script>
-      function sendEmail(event) {
-        event.preventDefault();
-
-        const name = document.getElementById("name").value;
-        const email = document.getElementById("email").value;
-        const phone = document.getElementById("phone").value;
-        const subject = document.querySelector(
-          'input[type="text"][placeholder="Subject"]'
-        ).value;
-        const message = document.getElementById("message").value;
-
-        const xhr = new XMLHttpRequest();
-        xhr.open("POST", "http://localhost:3000/send-email", true);
-        xhr.setRequestHeader(
-          "Content-Type",
-          "application/x-www-form-urlencoded"
-        );
-        xhr.onload = function () {
-          if (xhr.status === 200) {
-            alert("Message sent successfully");
-          } else {
-            alert("Error sending message");
-          }
-        };
-        xhr.send(
-          `name=${name}&email=${email}&phone=${phone}&subject=${subject}&message=${message}`
-        );
-      }
-    </script>
 
     <!-- JavaScript Libraries 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
