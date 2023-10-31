@@ -1,405 +1,598 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="image/icon.png" />
-    <title>Emmy William Kayanja</title>
 
-    <!--
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="images/icon.png" />
 
-    <!-- custom css -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- header design-->
-    <header class="header">
-      <a href="#" class="logo">Portfolio</a>
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/boxicons.min.css" />
+  <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <!-- intl-tel-input CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css">
+  <!-- intl-tel-input JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput.min.js"></script>
+  <!-- utils.js for formatting numbers -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/utils.js"></script>
 
-      <i class="bx bx-menu" id="menu-icon"></i>
+  <title>Emmy William kayanja</title>
+</head>
 
-      <nav class="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#services">Services</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+<!-- Navbar -->
 
-    <!-- home section design-->
-    <section class="home" id="home">
-      <div class="home-content">
-        <h3>Hello, It's Me</h3>
-        <h1>Emmy Williams</h1>
-        <h3>I'm a <span class="multiple-text"></span></h3>
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top active">
+    <div class="container">
+      <a class="navbar-logo" href="#">Portfolio</a>
+      <button class="navbar-toggler color-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home" onclick="closeNavbar()">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about" onclick="closeNavbar()">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education" onclick="closeNavbar()">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio" onclick="closeNavbar()">Portfolio</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#team" onclick="closeNavbar()">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#reviews" onclick="closeNavbar()">Reviews</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="#publications" onclick="closeNavbar()">Publications</a>
+          </li>
+        </ul>
+        <a href="#" class="btn btn-brand ms-lg-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home -->
+  <section id="home">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-6 col-md-12 intro">
+          <h3>Hello, It's Me</h3>
+          <h1>Emmy Williams</h1>
+          <h3 class="mb-3">I'm a <span style="color: #0ef;" class="multiple-text"></span></h3>
+          <p>
+            <span style="color: white; font-weight: bold; font-style: italic">" Transforming complex
+              problems into
+              elegant
+              solutions "
+            </span>
+            <br>
+            <br>
+
+            I am a computer scientist with a passion for innovation and a track
+            record of delivering cutting-edge projects on time and on budget.
+            Let's collaborate and create something amazing together.
+          </p>
+
+          <div class="social-media mt-4">
+            <a href="https://twitter.com/Kayanja_emmy"><i class="bx bxl-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/emmywilliams74/"><i class="bx bxl-linkedin"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=256755131352&text=Hello there..!
+              " target="_blank"><i class="bx bxl-whatsapp"></i></a>
+            <a href="https://join.skype.com/invite/NJRDy3H1I0Mh"><i class="bx bxl-skype"></i></a>
+            <a href="https://www.facebook.com/emmy.williamz"><i class="bx bxl-facebook"></i></a>
+            <a href="https://www.instagram.com/emmy_williamz/"><i class="bx bxl-instagram-alt"></i></a>
+          </div>
+
+          <div class="mt-5">
+            <a href="#" class="btn btn-brand">Download CV</a>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 home-img text-center">
+          <img src="./images/emmy.jpg" alt="image" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <h1 class="mb-3" style="text-align: center;">About <span style="color: #0ef;">Me</span></h1>
+
+        <div class="col-lg-5 col-md-12 mb-3 text-center about-img">
+          <img src="./images/emmy.jpg" style="transform: scaleX(-1)" alt="image" />
+        </div>
+
+        <div class="col-lg-7 col-md-12 intro">
+          <h3>Welcome to my online home!</h3>
+          <p class="mt-3">
+            My name is Emmy William Kayanja and I am a computer scientist with a
+            passion for creating innovative solutions to complex problems.
+          </p>
+          <p class="mt-3">
+            Throughout my career, I have gained expertise in various programming
+            languages, data analysis, and software development. I view learning as
+            a continuous journey and am eager to gain knowledge and experience
+            from experts.
+          </p>
+          <p class="mt-3">
+            My goal is to leverage my skills and experience to deliver tangible
+            and impactful results for clients and organizations. My interest in
+            technology drives me to explore various areas and expand my abilities
+            to develop innovative solutions in the field. With my strong interest
+            in AI and systems development, I believe that I have the potential to
+            contribute to the development of groundbreaking technologies that will
+            change the business world for the better.
+          </p>
+          <p class="mt-3">
+            On this website, you will find a collection of my projects,
+            achievements, and professional experience. I invite you to browse my
+            portfolio and get a glimpse of my work. Please do not hesitate to
+            contact me for any inquiries or opportunities to collaborate.
+          </p>
+          <p class="mt-3">Thank you for visiting!</p>
+          <div>
+            <a href="#" class="btn btn-brand">Contact Me</a>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 intro text-center">
+          <h1 class="mb-3">My <span style="color: #0ef;">Education</span></h1>
+        </div>
+      </div>
+
+      <!-- Bootstrap Table with Styling -->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover">
+              <thead>
+                <tr>
+                  <th class="text-center">Date</th>
+                  <th class="text-center">Achievement</th>
+                  <th class="text-center">Institution</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-center">2021-2024</td>
+                  <td class="">Bachelor of Science in Computer Science | 4.0/5.0</td>
+                  <td class="">Makerere University</td>
+                </tr>
+                <tr>
+                  <td class="text-center">2018-2019</td>
+                  <td class="">Uganda Advanced Certificate of Education (UACE)</td>
+                  <td class="">Masaka Secondary School</td>
+                </tr>
+                <tr>
+                  <td class="text-center">2018-2019</td>
+                  <td class="">Uganda Certificate of Education (UCE)</td>
+                  <td class="">St. Jude SS, Kyabakuza-Masaka</td>
+                </tr>
+                <tr>
+                  <td class="text-center">2005-2013</td>
+                  <td class="">Primary Leaving Examination (PLE)</td>
+                  <td class="">Waggwa Primary School, Lukaya-Masaka</td>
+                </tr>
+                <!-- Add more rows for your other education details -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <!-- Services -->
+  <!-- <section id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 intro text-center">
+          <h6>OUR SERVICES</h6>
+          <h1>What we provide?</h1>
+          <p>
+            If you are looking for a rewarding and fulfilling learning
+            experience, join FTSC today. You will discover new opportunities,
+            new challenges, and new possibilities.
+          </p>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 col-sm-6">
+          <div class="service-box">
+            <img src="./images/21.jpg" alt="image" />
+            <div class="service-content">
+              <h5>Hotel Management</h5>
+              <p>
+                If you are looking for a rewarding and fulfilling learning
+                experience, join FTSC today. You will discover new
+                opportunities, new challenges, and new possibilities.
+              </p>
+              <a href="#" class="btn btn-brand">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="service-box">
+            <img src="./images/cl.jpg" alt="image" />
+            <div class="service-content">
+              <h5>Hotel Management</h5>
+              <p>
+                If you are looking for a rewarding and fulfilling learning
+                experience, join FTSC today. You will discover new
+                opportunities, new challenges, and new possibilities.
+              </p>
+              <a href="#" class="btn btn-brand">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="service-box">
+            <img src="./images/17.jpg" alt="image" />
+            <div class="service-content">
+              <h5>Hotel Management</h5>
+              <p>
+                If you are looking for a rewarding and fulfilling learning
+                experience, join FTSC today. You will discover new
+                opportunities, new challenges, and new possibilities.
+              </p>
+              <a href="#" class="btn btn-brand">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="service-box">
+            <img src="./images/cl3.jpg" alt="image" />
+            <div class="service-content">
+              <h5>Hotel Management</h5>
+              <p>
+                If you are looking for a rewarding and fulfilling learning
+                experience, join FTSC today. You will discover new
+                opportunities, new challenges, and new possibilities.
+              </p>
+              <a href="#" class="btn btn-brand">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="service-box">
+            <img src="./images/15.jpg" alt="image" />
+            <div class="service-content">
+              <h5>Hotel Management</h5>
+              <p>
+                If you are looking for a rewarding and fulfilling learning
+                experience, join FTSC today. You will discover new
+                opportunities, new challenges, and new possibilities.
+              </p>
+              <a href="#" class="btn btn-brand">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="service-box">
+            <img src="./images/travel.jpg" alt="image" />
+            <div class="service-content">
+              <h5>Hotel Management</h5>
+              <p>
+                If you are looking for a rewarding and fulfilling learning
+                experience, join FTSC today. You will discover new
+                opportunities, new challenges, and new possibilities.
+              </p>
+              <a href="#" class="btn btn-brand">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 intro text-center">
+          <h1 class="mb-3">Recent<span style="color: #0ef;"> Projects</span></h1>
+        </div>
+      </div>
+    </div>
+    <div id="project-slider" class="owl-theme owl-carousel">
+      <div class="project">
+        <img src="./images/agri.png" alt="image" />
+        <div class="overlay"></div>
+        <div class="content">
+          <h1>AgriCare Expert AI</h1>
+          <h6>Empowering Smart Agriculture</h6>
+        </div>
+      </div>
+      <div class="project">
+        <img src="./images/app.jpeg" alt="image" />
+        <div class="overlay"></div>
+        <div class="content">
+          <h1>Mobile App Development</h1>
+          <h6>Responsive Applications with Flutter</h6>
+        </div>
+      </div>
+      <div class="project">
+        <img src="./images/web.jpg" alt="image" />
+        <div class="overlay"></div>
+        <div class="content">
+          <h1>Web Applications</h1>
+          <h6>Landing pages and Systems</h6>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <!-- <section id="team">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 intro text-center">
+          <h6>OUR TEAM</h6>
+          <h1>Meet Our Team</h1>
+          <p>
+            If you are looking for a rewarding and fulfilling learning
+            experience, join FTSC today. You will discover new opportunities,
+            new challenges, and new possibilities.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="team-member">
+              <div class="img-wrapper">
+                <img src="./images/7.png" alt="image" />
+                <div class="overlay"></div>
+                <div class="social-links">
+                  <a href="#"><i class="bx bxl-facebook"></i></a>
+                  <a href="#"><i class="bx bxl-twitter"></i></a>
+                  <a href="#"><i class="bx bxl-instagram"></i></a>
+                  <a href="#"><i class="bx bxl-whatsapp"></i></a>
+                </div>
+              </div>
+              <div class="content">
+                <h4>John Doe</h4>
+                <h6>CEO & Founder</h6>
+                <p>
+                  If you are looking for a rewarding and fulfilling learning
+                  experience, join FTSC today.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="team-member">
+              <div class="img-wrapper">
+                <img src="./images/5.png" alt="image" />
+                <div class="overlay"></div>
+                <div class="social-links">
+                  <a href="#"><i class="bx bxl-facebook"></i></a>
+                  <a href="#"><i class="bx bxl-twitter"></i></a>
+                  <a href="#"><i class="bx bxl-instagram"></i></a>
+                  <a href="#"><i class="bx bxl-whatsapp"></i></a>
+                </div>
+              </div>
+              <div class="content">
+                <h4>John Doe</h4>
+                <h6>CEO & Founder</h6>
+                <p>
+                  If you are looking for a rewarding and fulfilling learning
+                  experience, join FTSC today.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="team-member">
+              <div class="img-wrapper">
+                <img src="./images/1.png" alt="image" />
+                <div class="overlay"></div>
+                <div class="social-links">
+                  <a href="#"><i class="bx bxl-facebook"></i></a>
+                  <a href="#"><i class="bx bxl-twitter"></i></a>
+                  <a href="#"><i class="bx bxl-instagram"></i></a>
+                  <a href="#"><i class="bx bxl-whatsapp"></i></a>
+                </div>
+              </div>
+              <div class="content">
+                <h4>John Doe</h4>
+                <h6>CEO & Founder</h6>
+                <p>
+                  If you are looking for a rewarding and fulfilling learning
+                  experience, join FTSC today.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Reviews -->
+  <!-- <section id="reviews" class="bg-cover">
+    <div class="owl-carousel owl-theme" id="reviews-slider">
+      <div class="review">
+        <img src="./images/1.png" alt="image" />
+        <h4>Emmy Williams</h4>
+        <small>CEO & Founder</small>
         <p>
-          <span style="color: white; font-weight: bold; font-style: italic"
-            >" Transforming complex problems into elegant solutions "</span
-          >
-          <br />
-          <br />
-          I am a computer scientist with a passion for innovation and a track
-          record of delivering cutting-edge projects on time and on budget.
-          Let's collaborate and create something amazing together.
+          I have also provided you with an example of how you can implement
+          this using jQuery animateNumber and jQuery Waypoints in my previous
+          response. You can use it as a reference, but I encourage you to try
+          to write your own code and experiment with different options and
+          values. That way, you will learn more and improve your web
+          development skills.
         </p>
-        <div class="social-media">
-          <a href="https://twitter.com/Kayanja_emmy"
-            ><i class="bx bxl-twitter"></i
-          ></a>
-          <a href="https://www.linkedin.com/in/emmywilliams74/"
-            ><i class="bx bxl-linkedin"></i
-          ></a>
-          <a
-            href="https://api.whatsapp.com/send?phone=256755131352&text=Hello there..!
-          "
-            target="_blank"
-            ><i class="bx bxl-whatsapp"></i
-          ></a>
-          <a href="https://join.skype.com/invite/NJRDy3H1I0Mh"
-            ><i class="bx bxl-skype"></i
-          ></a>
-          <a href="https://www.facebook.com/emmy.williamz"
-            ><i class="bx bxl-facebook"></i
-          ></a>
-          <a href="https://www.instagram.com/emmy_williamz/"
-            ><i class="bx bxl-instagram-alt"></i
-          ></a>
-        </div>
-        <a class="btn" onclick="downloadPDF()">Download CV</a>
       </div>
-      <div class="home-img">
-        <img src="image/emmy.jpg" alt="profile picture" />
-      </div>
-    </section>
-
-    <!-- about section design-->
-    <section class="about" id="about">
-      <div class="about-img">
-        <img
-          src="image/emmy.jpg"
-          style="transform: scaleX(-1)"
-          alt="about-img"
-        />
-      </div>
-
-      <div class="about-content">
-        <h2 class="heading">About <span>Me</span></h2>
-        <h3>Welcome to my online home!</h3>
+      <div class="review">
+        <img src="./images/1.png" alt="image" />
+        <h4>Zicrane Kimbugwe</h4>
+        <small>Executive Director</small>
         <p>
-          My name is Emmy William Kayanja and I am a computer scientist with a
-          passion for creating innovative solutions to complex problems.
-          <br />
-          <br />
-          Throughout my career, I have gained expertise in various programming
-          languages, data analysis, and software development. I view learning as
-          a continuous journey and am eager to gain knowledge and experience
-          from experts.
-          <br />
-          <br />
-          My goal is to leverage my skills and experience to deliver tangible
-          and impactful results for clients and organizations. My interest in
-          technology drives me to explore various areas and expand my abilities
-          to develop innovative solutions in the field. With my strong interest
-          in AI and systems development, I believe that I have the potential to
-          contribute to the development of groundbreaking technologies that will
-          change the business world for the better.
-          <br />
-          <br />
-          On this website, you will find a collection of my projects,
-          achievements, and professional experience. I invite you to browse my
-          portfolio and get a glimpse of my work. Please do not hesitate to
-          contact me for any inquiries or opportunities to collaborate. <br />
-          <br />
-          Thank you for visiting!
+          I have also provided you with an example of how you can implement
+          this using jQuery animateNumber and jQuery Waypoints in my previous
+          response. You can use it as a reference, but I encourage you to try
+          to write your own code and experiment with different options and
+          values. That way, you will learn more and improve your web
+          development skills.
         </p>
-        <a href="#contact" class="btn">Contact Me</a>
       </div>
-    </section>
-
-    <!-- services design-->
-    <section class="education" id="education">
-      <h2 class="heading">My <span>Education</span></h2>
-
-      <table>
-        <thead>
-          <tr>
-            <th style="text-align: center">Date</th>
-            <th style="text-align: center">Achievement</th>
-            <th style="text-align: center">Institution</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th data-title="Date" scope="row">Jan 2021 – Ongoing</th>
-            <th data-title="Achievement" style="font-weight: lighter">
-              Bachelor of Science in Computer Science | CGPA: 3.99/5.00
-            </th>
-            <th data-title="Institution" style="font-weight: lighter">
-              Makerere University, College of Computing and Information Sciences
-            </th>
-          </tr>
-          <tr>
-            <th data-title="Date" scope="row">April 2023 – May 2023</th>
-            <th data-title="Achievement" style="font-weight: lighter">
-              Certificate in HTML, CSS & Javascript for Web Developers
-            </th>
-            <th data-title="Institution" style="font-weight: lighter">
-              Johns Hopkins UNiversity by Coursera
-            </th>
-          </tr>
-          <tr>
-            <th data-title="Date" scope="row">April 2022 – June 2022</th>
-            <th data-title="Achievement" style="font-weight: lighter">
-              Certificate in Fundamentals of Digital Marketing
-            </th>
-            <th data-title="Institution" style="font-weight: lighter">
-              Google Digital Garage
-            </th>
-          </tr>
-          <tr>
-            <th data-title="Date" scope="row">Jan 2018 – Dec 2019</th>
-            <th data-title="Achievement" style="font-weight: lighter">
-              Uganda Advance Certificate of Education (UACE)
-            </th>
-            <th data-title="Institution" style="font-weight: lighter">
-              Masaka Secondary School
-            </th>
-          </tr>
-          <tr>
-            <th data-title="Date" scope="row">Jan 2014- Dec 2017</th>
-            <th data-title="Achievement" style="font-weight: lighter">
-              Uganda Certificate of Education (UCE)
-            </th>
-            <th data-title="Institution" style="font-weight: lighter">
-              St. Jude Secondary School, Kyabakuza
-            </th>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <!-- Certificate section design-->
-    <section class="portfolio" id="portfolio">
-      <h2 class="heading">Certifications <span>& Awards</span></h2>
-
-      <a href="image/kayanja_emmy_william.pdf" target="_blank"
-        >Click here to view PDF</a
-      >
-    </section>
-
-    <!-- services design-->
-    <section class="services" id="services">
-      <h2 class="heading">Services <span>offered</span></h2>
-
-      <div class="services-container">
-        <div class="services-box">
-          <i class="bx bx-code-alt"></i>
-          <h3>Website Development</h3>
-          <p>
-            A professional website is crucial for businesses as it serves as
-            their storefront in the digital world and can establish credibility,
-            boost brand recognition, and improve customer experience,
-            potentially impacting a customer's decision to engage further with
-            the business.
-          </p>
-          <a href="#" class="btn">Read More</a>
-        </div>
-
-        <div class="services-box">
-          <i class="bx bxl-android"></i>
-          <h3>Mobile App Development</h3>
-          <p>
-            Professional mobile apps enhance customer engagement, increase brand
-            recognition and reputation, offer a personalized and convenient
-            experience, and provide a competitive advantage, making them a
-            valuable marketing strategy for business growth and success.
-          </p>
-          <a href="#" class="btn">Read More</a>
-        </div>
-
-        <div class="services-box">
-          <i class="bx bxs-paint"></i>
-          <h3>Graphic Design</h3>
-          <p>
-            Professional graphic designs are crucial for brand representation
-            and recognition, communicating complex ideas and creating a positive
-            user experience. Consistency and quality across all mediums builds
-            trust and loyalty, strengthens brand identity and differentiation,
-            and enhances engagement and sales.
-          </p>
-          <a href="#" class="btn">Read More</a>
-        </div>
-
-        <div class="services-box">
-          <i class="bx bx-buildings"></i>
-          <h3>Custom Systems Development</h3>
-          <p>
-            This can can enhance productivity and profitability by tailoring a
-            system to a company's unique needs. It simplifies processes, reduces
-            errors, and can be integrated with other systems for better
-            functionality, data collection, and sharing. It provides a
-            competitive edge, streamlines operations, reduces costs, and
-            improves overall performance.
-          </p>
-          <a href="#" class="btn">Read More</a>
-        </div>
-
-        <div class="services-box">
-          <i class="bx bx-slideshow"></i>
-          <h3>Software Solutions</h3>
-          <p>
-            Software solutions are critical for modern businesses to streamline
-            their operations, improve efficiency and reduce costs. Accounting,
-            customer relationship management and inventory management are among
-            the many tasks that software can handle. Factors such as budget and
-            organization size influence software selection.
-          </p>
-          <a href="#" class="btn">Read More</a>
-        </div>
-
-        <div class="services-box">
-          <i class="bx bx-bar-chart-alt"></i>
-          <h3>Digital Marketing</h3>
-          <p>
-            Digital marketing services are vital for businesses and can include
-            SEO, social media, email marketing, and more. They offer benefits
-            such as increased brand awareness, customer engagement, website
-            traffic, and sales. Digital marketing is cost-effective, measurable,
-            and enables businesses to compete with larger companies. It's
-            important to stay up-to-date with digital marketing trends.
-          </p>
-          <a href="#" class="btn">Read More</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Portfolio section design-->
-    <section class="portfolio" id="portfolio">
-      <h2 class="heading">Latest <span>Project</span></h2>
-
-      <div class="portfolio-container">
-        <div class="portfolio-box">
-          <img src="image/web.jpg" alt="portfolio-image" />
-          <div class="portfolio-layer">
-            <h4>Website Design</h4>
-            <p style="color: black">
-              This combines coding, design, and content creation to create
-              websites that are functional, user-friendly, and visually
-              appealing.
-            </p>
-            <!--<a href="#portfolio"><i class="bx bx-link-external"></i></a>-->
-          </div>
-        </div>
-
-        <div class="portfolio-box">
-          <img src="image/graphic1.jpg" alt="portfolio-image" />
-          <div class="portfolio-layer">
-            <h4>Graphics Design</h4>
-            <p style="color: black">
-              This is a craft where professionals create visual content to
-              communicate messages.
-            </p>
-            <!--<a href="#portfolio"><i class="bx bx-link-external"></i></a>-->
-          </div>
-        </div>
-
-        <div class="portfolio-box">
-          <img src="image/app.jpeg" alt="portfolio-image" />
-          <div class="portfolio-layer">
-            <h4>Mobile App Development</h4>
-            <p style="color: black">
-              Mobile app development is the process of creating software
-              applications that run on mobile devices such as smartphones,
-              tablets, and wearable devices.
-            </p>
-            <!--<a href="#portfolio"><i class="bx bx-link-external"></i></a>-->
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Gallery design-->
-    <section class="gallery" id="gallery">
-      <h2 class="heading">My <span>Gallery</span></h2>
-
-      <div class="full-img" id="fullImgBox">
-        <img src="emmy.jpg" id="fullImg" />
-        <span onclick="closeFullImg()">X</span>
-      </div>
-      <div class="img-gallery">
-        <img src="image/emmy.jpg" onclick="openFullImg(this.src)" />
-        <img src="image/edu.jpg" onclick="openFullImg(this.src)" />
-        <img src="image/flag.jpg" onclick="openFullImg(this.src)" />
-        <img src="image/psh.jpg" onclick="openFullImg(this.src)" />
-        <img src="image/gil.jpg" onclick="openFullImg(this.src)" />
-        <img src="image/mon.jpg" onclick="openFullImg(this.src)" />
-      </div>
-    </section>
-
-    <!-- contact section design -->
-    <section class="contact" id="contact">
-      <h2 class="heading">Contact <span>Me!</span></h2>
-
-      <form
-        action="https://formsubmit.co/emmywilliamkayanja@gmail.com"
-        method="post"
-      >
-        <div class="input-box">
-          <input type="text" id="name" placeholder="Name" />
-          <input type="email" id="email" placeholder="Email" />
-        </div>
-        <div class="input-box">
-          <input type="text" id="phone" placeholder="Phone number" />
-          <input type="text" placeholder="Subject" />
-        </div>
-        <textarea
-          name=""
-          id="message"
-          cols="30"
-          rows="10"
-          placeholder="Your Message"
-        ></textarea>
-        <input type="submit" value="Send Message" class="btn" />
-      </form>
-    </section>
-
-    <!-- Footer section-->
-    <footer class="footer">
-      <div class="footer-text">
+      <div class="review">
+        <img src="./images/1.png" alt="image" />
+        <h4>Simon Peter</h4>
+        <small>Non-Executive Director</small>
         <p>
-          Copyright &copy; <span id="currentYear"></span> by Emmy Williams | All
+          I have also provided you with an example of how you can implement
+          this using jQuery animateNumber and jQuery Waypoints in my previous
+          response. You can use it as a reference, but I encourage you to try
+          to write your own code and experiment with different options and
+          values. That way, you will learn more and improve your web
+          development skills.
+        </p>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Publications -->
+  <section id="publications">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 intro text-center">
+          <h1 class="mb-3">My <span style="color: #0ef;">Publications</span></h1>
+          <p>
+            Welcome to my publications page, where I showcase my contributions to international peer-reviewed journals,
+            conference proceedings, and book chapters, highlighting my commitment to advancing knowledge in the world of
+            technology and innovation.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <div class="">
+            <ul>
+              <li>
+                Yiga Gilbert, <strong style="color: #0ef;">Emmy William Kayanja, </strong> Joshua Edward Kalungi,
+                Jonah Mubuuke Kyagaba,
+                Ggaliwango Marvin (2023). "Explainable AI for Black Sigatoka Detection". 4th International Conference on
+                Image Processing and Capsule Networks (ICIPCN 2023).
+              </li>
+              <!-- Repeat the above list item for each journal article -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-bottom">
+      <div class="container text-center align-items-center">
+        <p class="mb-0">
+          Copyright &copy; <span id="currentYear"></span> <strong style="color: #0ef;">Emmy Williams.</strong> All
           Rights Reserved.
         </p>
       </div>
+    </div>
+    <div class="footer-iconTop">
+      <a href="#home"><i class="bx bx-up-arrow-alt text-decoration-none"></i></a>
+    </div>
+  </footer>
 
-      <div class="footer-iconTop">
-        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body p-0">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-4 bg-cover image-section"
+                style="background-image: url(./images/p.png); background-position: center;"></div>
+
+              <div class="col-lg-8">
+
+                <form action="" class="row custom-padding gy-3">
+                  <div class="col-lg-12 justify-content-center text-center">
+                    <h1>Get in touch</h1>
+                    <p>Let's build something amazing together</p>
+                  </div>
+                  <div class="col-lg-6">
+                    <label for="exampleFormControlInput1" class="form-label">First name</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="John">
+                  </div>
+                  <div class="col-lg-6">
+                    <label for="exampleFormControlInput1" class="form-label">Last name</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Doe">
+                  </div>
+
+                  <div class="col-lg-6">
+                    <label for="phone" class="form-label">Phone</label>
+                    <input type="text" class="form-control" id="phone" placeholder="700000000">
+                  </div>
+
+                  <div class="col-lg-6">
+                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                      placeholder="johndoe@gmail.com">
+                  </div>
+                  <div class="col-lg-12">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea name="message" class="form-control" id="exampleFormControlTextarea1" cols="30" rows="4"
+                      placeholder="Type your message here"></textarea>
+                  </div>
+                  <div class="col-lg-12 text-center align-items-center">
+                    <button type="button" class="btn btn-brand">Send</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                      style="margin-left: 25px;">Close</button>
+                  </div>
+                </form>
+
+                <div class="alert alert-success text-center d-none" id="successMessage" role="alert">
+                  Message sent successfully. Thank you!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </footer>
+    </div>
+  </div>
 
-    <!-- Scroll reveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
 
-    <!-- typed js -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <!-- typed js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/owl.carousel.min.js"></script>
+  <script src="./js/app.js"></script>
+</body>
 
-    <!-- custom js -->
-    <script src="script.js"></script>
-
-    <!-- box icons-->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-
-    <!-- JavaScript Libraries 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    -->
-  </body>
 </html>
